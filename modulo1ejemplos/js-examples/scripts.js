@@ -108,7 +108,7 @@ function cambiarSeccion(seccionId) {
     event.target.classList.add('active');
 }
 
-// Ejemplo 1: Obtener Pokémon básico (Promesas)
+// Ejemplo 1: Obtener Pokémon básico (Promesas), f. Manejo avanzado de errores
 function obtenerPokemon() {
     const id = document.getElementById('pokemonId').value;
     fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
@@ -132,7 +132,7 @@ function obtenerPokemon() {
         });
 }
 
-// Ejemplo 2: Cadena de evoluciones (Async/Await)
+// Ejemplo 2: Cadena de evoluciones (Async/Await) f. Manejo avanzado de errores:
 async function obtenerEvoluciones() {
     try {
         const response = await fetch('https://pokeapi.co/api/v2/evolution-chain/1025');
@@ -170,7 +170,7 @@ function pokemonAleatorio() {
         });
 }
 
-// Ejemplo 4: Pokémon por nombre (Fetch + Async/Await)
+// Ejemplo 4: Pokémon por nombre (Fetch + Async/Await), f. Manejo avanzado de errores:
 async function pokemonPorNombre() {
     const nombre = document.getElementById('pokemonNombre').value.toLowerCase();
     console.log(nombre);
@@ -192,7 +192,7 @@ async function pokemonPorNombre() {
     }
 }
 
-// Ejemplo 1: Obtener razas de perros
+// Ejemplo 1: Obtener razas de perros, e.Nuevo consumo de API f.Manejo avanzado de errores:
 function obtenerPerro() {
       fetch(`https://dog.ceo/api/breeds/image/random`)
         .then(response => {
